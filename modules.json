@@ -1,0 +1,14 @@
+[
+  {
+    "name": "twitch-redis-bridge",
+    "enabled": true,
+    "args": ["-F", "/tmp/dacham-nombox-server/config/trb_conf.json"],
+    "options": {}
+  },
+  {
+    "name": "streamlabs-redis-bridge",
+    "enabled": true,
+    "args": ["-F", "/tmp/dacham-nombox-server/config/srb_conf.json"],
+    "options": {}
+  }
+]
