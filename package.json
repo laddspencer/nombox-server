@@ -16,6 +16,6 @@
     "streamlabs-socket-client": "0.0.4",
     "tmi.js": "^1.4.2",
     "twitch-auth": "^1.0.3",
-    "twitch-redis-bridge": "^1.0.0"
+    "twitch-redis-bridge": "^1.0.1"
   }
 }
