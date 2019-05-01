@@ -8,8 +8,8 @@ cd dacham-nombox-server
 npm install
 ```
 
-## modules.json
-Copy the example modules file to `modules.json`.
+### modules.json
+Copy the example modules file to `modules.json`:
 ```
 cp modules_example.json modules.json
 ```
@@ -20,3 +20,9 @@ after "-F") must be set.
 
 When adding your own modules, `name` does not have to refer to a package in
 `node_modules`; it can be a path to any Node.js file or package directory.
+
+### Configuration Files
+Each config file pointed to by `modules.json` should be updated to specify
+the path to the module's respective credentials file. There are existing
+configuration and credential files in the `config` directory.
+
