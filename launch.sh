@@ -1,3 +1,3 @@
 #!/bin/bash
 
-screen -S dacham-nombox -dmL ./index.js
+screen -S dacham-nombox-server -dmL ./index.js
