@@ -38,7 +38,7 @@ A sample config file [modules_example.json](https://github.com/laddspencer/dacha
 ```
 
 Edit the new file to configure plugin modules or add your own. Two modules,
-*[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default.
+*[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default. Their packages are downloaded during the `npm install` step and can be found under **./node_modules/**.
 If these are to be employed, the path to their config files (the *args* element
 after **-F**) must be set.
 
