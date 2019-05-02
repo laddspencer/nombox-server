@@ -14,7 +14,7 @@ Copy the example modules file to *modules.json*:
 cp modules_example.json modules.json
 ```
 Edit the new file to configure plugin modules or add your own. Two modules,
-*twitch-redis-bridge* and *streamlabs-redis-bridge*, are included by default.
+*[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default.
 If these are to be employed, the path to their config files (the *args* element
 after **-F**) must be set.
 
