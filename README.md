@@ -38,12 +38,12 @@ A sample config file [modules_example.json](https://github.com/laddspencer/dacha
 ```
 
 Edit the new file to configure plugin modules or add your own. Two modules,
-*[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default. Their packages are downloaded during the `npm install` step and can be found under **./node_modules/**.
+*[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default. Their packages are downloaded during the `npm install` step and can be found under **node_modules**.
 If these are to be employed, the path to their config files (the *args* element
-after **-F**) must be set.
+after **-F**) must be set. Absolute paths work best, but relative paths will work if you're careful about which directory you're running **dacham-nombox-server** from.
 
 When adding your own modules, *name* does not have to refer to a package in
-*node_modules*; it can be a path to any Node.js file or package directory.
+**node_modules**; it can be a path to any Node.js file or package directory (e.g. **./foo/my_script.js**).
 
 ### Configuration Files
 Each config file pointed to by *modules.json* should be updated to specify
