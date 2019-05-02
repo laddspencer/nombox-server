@@ -48,10 +48,8 @@ If these are to be employed, the path to their config files (the *args* element
 after **-F**) must be set. Absolute paths work best, but relative paths will work if you're careful about which directory you're running **dacham-nombox-server** from.
 
 ### Configuration Files
-Each config file pointed to by *modules.json* should be updated to specify
-the path to the module's respective credentials file. There are existing
-configuration and credential files in the *config* directory.
-
+Each config file pointed to by *modules.json* should be updated to specify the path to the module's respective credentials file.
+There are example configuration and credential files in the *config* directory. See *[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)* for more details on how to get those modules working.
 
 ## Windows 10 Linux Subsystem
 This was built and tested on a Linux server, but it can be run on Windows 10 using the new [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If this is the route you choose, there are some things to be aware of.
