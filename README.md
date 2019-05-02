@@ -18,10 +18,25 @@ npm install
 ```
 
 ### modules.json
-Copy the example modules file to *modules.json*:
+A sample config file [modules_example.json](https://github.com/laddspencer/dacham-nombox-server/blob/master/modules_example.json) is include in the source tree; use this as the basis for your own by copying or renaming it to *modules.json*.
+
 ```
-cp modules_example.json modules.json
+[
+  {
+    "name": "twitch-redis-bridge",
+    "enabled": true,
+    "args": ["-F", "/path/to/trb_config.json"],
+    "options": {}
+  },
+  {
+    "name": "streamlabs-redis-bridge",
+    "enabled": true,
+    "args": ["-F", "/path/to/srb_config.json"],
+    "options": {}
+  }
+]
 ```
+
 Edit the new file to configure plugin modules or add your own. Two modules,
 *[twitch-redis-bridge](https://github.com/laddspencer/twitch-redis-bridge)* and *[streamlabs-redis-bridge](https://github.com/laddspencer/streamlabs-redis-bridge)*, are included by default.
 If these are to be employed, the path to their config files (the *args* element
