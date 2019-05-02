@@ -37,8 +37,9 @@ configuration and credential files in the *config* directory.
 
 
 ## Windows 10 Linux Subsystem
+This was built and tested on a Linux server (even a [Raspberry Pi](https://www.raspberrypi.org/) will work), but it can be run on Windows 10 using the new [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If this is the route you choose, there are some things to be aware of.
 
-### Node.js notes
+### Node.js
 The version of Node.js available through apt-get on Win10 (Linux Subsystem)
 is too old, so we build ourselves a copy of the latest LTS release.
 From a Linux shell:
@@ -61,6 +62,8 @@ cd /usr/bin
 sudo ln -s /usr/local/bin/node nodejs
 ```
 
-### Redis notes
+### Redis
+The Redis server does not run by default on Windows. In my experience, I have to start it manually every time I want to run **dacham-nombox-server** on my Windows machine.
+
 Windows firewall is likely blocking access to the default redis port (6379).
 If that is the case, you will have to add a rule to allow access to this port.
