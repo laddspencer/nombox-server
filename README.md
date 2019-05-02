@@ -1,7 +1,7 @@
 # dacham-nombox-server
 Bridges functionality of web resources and dacham-nombox clients using redis pub/sub.
 
-Well, that doesn't tell you much...what we're really talking about here is taking a variety of resources like Twitch chat messages, Streamlabs donations, or even sensor readings off a [Raspberry Pi](https://www.raspberrypi.org/), and combining them into a common stream of data that is more easily accessible than writing your own web-socket code or chat bots. All of the heavy lifting (connection management, authorization, etc) is done with **dacham-nombox-server** plugins, and as the user, you simply have to connect to a Redis server and subscribe to the messages that you're interested in.
+Well, that doesn't tell you much...what we're really talking about here is taking a variety of resources like [Twitch](https://www.twitch.tv/) chat messages, [Streamlabs](https://streamlabs.com/) donations, or even sensor readings off a [Raspberry Pi](https://www.raspberrypi.org/), and combining them into a common stream of data that is more easily accessible than writing your own web-socket code or chat bots. All of the heavy lifting (connection management, authorization, etc) is done with **dacham-nombox-server** plugins, and as the user, you simply have to connect to a Redis server and subscribe to the messages that you're interested in.
 
 ## See It In Action
 This whole thing was conceived as the backend for a system that would allow me to transparently overlay an instance of [Unity](https://unity.com/) on top of my stream and have it react to interesting events. In this example, the people in my chat are using keywords to activate objects in the scene (fire missiles, run a ban-animation, and trigger "toasty" popups).
