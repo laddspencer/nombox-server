@@ -1,7 +1,7 @@
 # dacham-nombox-server
 Bridges functionality of web resources and dacham-nombox clients using redis pub/sub.
 
-Well, that doesn't tell you much...what we're really talking about here is taking a variety of resources like Twitch chat messages, Streamlabs donations, or even sensor readings, and combining them into a common stream of data that is more easily accessible than writing your own web-socket code or chat bots. All of the heavy lifting (connection management, authorization, etc) is done with **dacham-nombox-server** plugins, and as the user, you simply have to connect to a Redis server and subscribe to the messages that you're interested in.
+Well, that doesn't tell you much...what we're really talking about here is taking a variety of resources like Twitch chat messages, Streamlabs donations, or even sensor readings off a [Raspberry Pi](https://www.raspberrypi.org/), and combining them into a common stream of data that is more easily accessible than writing your own web-socket code or chat bots. All of the heavy lifting (connection management, authorization, etc) is done with **dacham-nombox-server** plugins, and as the user, you simply have to connect to a Redis server and subscribe to the messages that you're interested in.
 
 ## See It In Action
 This whole thing was conceived as the backend for a system that would allow me to transparently overlay an instance of [Unity](https://unity.com/) on top of my stream and have it react to interesting events. In this example, the people in my chat are using keywords to activate objects in the scene (fire missiles, run a ban-animation, and trigger "toasty" popups).
@@ -54,7 +54,7 @@ configuration and credential files in the *config* directory.
 
 
 ## Windows 10 Linux Subsystem
-This was built and tested on a Linux server (even a [Raspberry Pi](https://www.raspberrypi.org/) will work), but it can be run on Windows 10 using the new [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If this is the route you choose, there are some things to be aware of.
+This was built and tested on a Linux server, but it can be run on Windows 10 using the new [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If this is the route you choose, there are some things to be aware of.
 
 ### Node.js
 The version of Node.js available through apt-get on Win10 (Linux Subsystem)
