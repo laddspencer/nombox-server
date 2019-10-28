@@ -1,0 +1,11 @@
+{
+  "name": "pubsub-filter",
+  "version": "1.0.0",
+  "description": "Utility sink/source object for Redis pubsub.",
+  "main": "pubsub-filter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ladd Spencer",
+  "license": "ISC"
+}
