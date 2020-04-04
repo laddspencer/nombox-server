@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "fancy-log": "^1.3.3",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.3",
     "redis": "^2.8.0",
     "streamlabs-redis-bridge": "^1.0.2",
     "streamlabs-socket-client": "0.0.4",
